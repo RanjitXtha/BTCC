@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme{
+  --color-dark-brown: #312F2F;
+  --color-blue: #124f83;
+  --color-orange:#f37621;
+}
+
+@layer components{
+  .padding{
+    @apply px-[3rem]
+  }
+
+  .padding-y{
+    @apply py-[4rem]
+  }
+
+  .padding-left{
+    @apply pl-[3rem]
+  }
+
+  .text-large{
+    @apply text-5xl/15 font-bold 
+  }
+
+  .bg-image{
+    @apply object-cover w-full h-full opacity-50
+  }
+
+  .footer-input{
+    @apply bg-[#124F83] outline-0 border-0 py-4 px-8 text-white
+  }
+
+  .custom-shadow{
+    @apply shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.5)]
+  }
+}
+
+
+.scrollbar-hide {
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; 
+}
