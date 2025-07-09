@@ -2,7 +2,7 @@ import React from 'react'
 import { FiMail, FiPhone } from 'react-icons/fi'
 import { MdOutlineLocationOn } from 'react-icons/md'
 import { Link } from 'react-router-dom'
-
+import { GiHamburgerMenu } from "react-icons/gi";
 const Header = () => {
   return (
      <header className='fixed w-full z-50'>
@@ -35,7 +35,8 @@ const Header = () => {
                                 </div>
                             </span>
             </div>
-            <div className='flex items-center gap-2 md:gap-4 lg:gap-10 padding-left justify-between'>
+
+            <div className='hidden sm:flex items-center gap-2 md:gap-4 lg:gap-10 padding-left justify-between'>
                 <img className='h-[3rem] hidden md:block drop-shadow-sm drop-shadow-black' src="/images/Logo.png" alt="logo" />
                 <div className='bg-blue flex items-center gap-2 font-bold text-white justify-evenly w-full h-[4rem]'>
                     <Link to="/">HOME</Link>
@@ -46,6 +47,13 @@ const Header = () => {
                     <Link to="/book-training">BOOK A TRAINING</Link>
                 </div>
             </div>
+
+
+       <button className='ml-[1rem] text-white text-4xl sm:hidden custom-shadow  p-2 flex justify-center items-center bg-orange'>
+         <GiHamburgerMenu  />
+       </button>
+           
+     
            
         </header>
   )
