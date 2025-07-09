@@ -12,24 +12,32 @@ const Mission = () => {
 
             <div className='flex items-center text-blue font-semibold'>
                 <OrangeLine />
-                <p className='mr-6 w-[17rem] text-blue text-lg font-bold'>OUR VISION</p>
+                <p className='mr-6 max-w-[17rem] text-blue text-lg font-bold'>OUR VISION</p>
                 <p>To be a leading scaffolding services provider recognized for our integrity, safety practices, and global partnerships </p>
             </div>
 
             <div className='flex items-center text-blue font-semibold'>
                 <OrangeLine />
-                <p className='mr-6 w-[17rem] text-blue text-lg font-bold'>OUR MISSION</p>
+                <p className='mr-6 max-w-[17rem] text-blue text-lg font-bold'>OUR MISSION</p>
                 <p>To be a leading scaffolding services provider recognized for our integrity, safety practices, and global partnerships </p>
             </div>
 
             
         </div>
 
-        <div className='lg:h-[35rem] w-full grid grid-cols-1 sm:grid-cols-2 gap-6 grid-rows-4  sm:grid-rows-[1fr_2fr_1fr] my-[3rem] mr-[3rem]'>
-            <div className='bg-blue-300 h-[15rem] sm:h-auto  sm:row-span-2'></div>
-            <div className='bg-blue-300  h-[15rem]sm:h-auto '></div>
-            <div className='bg-blue-300  h-[15rem] sm:h-auto sm:row-span-2'></div>
-            <div className='bg-blue-300  h-[15rem] sm:h-[10rem]'></div>
+        <div className='lg:h-[45rem] w-full grid grid-cols-1 sm:grid-cols-2 gap-6 grid-rows-4  sm:grid-rows-[1fr_2fr_1fr] my-[3rem] mr-[3rem]'>
+            <div className='bg-blue-300 overflow-hidden h-[25rem] sm:h-auto  sm:row-span-2'>
+                <img className='object-cover w-full h-full' src="/images/whatsapp/img7.jpg" />
+            </div>
+            <div className='bg-blue-300  overflow-hidden h-full min-h-[15rem] sm:h-[10rem] '>
+                <img className='object-cover w-full h-full' src="/images/whatsapp/img5.jpg" />
+            </div>
+            <div className='bg-blue-300  overflow-hidden h-[25rem] sm:h-auto sm:row-span-2'>
+                <img className='object-cover w-full h-full' src="/images/whatsapp/img10.jpg" />
+            </div>
+            <div className='bg-blue-300  overflow-hidden h-full min-h-[15rem] sm:h-[10rem]'>
+                <img className='object-cover w-full h-full ' src="/images/whatsapp/img9.jpg" />        
+            </div>
         </div>
       
     </div>

@@ -40,7 +40,7 @@ const Footer = () => {
         </div>
 
         <div className='flex flex-col '>
-            <span className='flex gap-6 mb-6'>
+            <span className='flex flex-wrap  gap-6 mb-6'>
                 <div className='flex gap-4 items-center'>
                     <FiMail className='text-orange text-3xl' />
                     <span>

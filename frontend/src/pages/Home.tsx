@@ -11,7 +11,6 @@ const Home = () => {
         <About />
         <Training />
         <Mission />
-        
         <Footer />
     </>
    
