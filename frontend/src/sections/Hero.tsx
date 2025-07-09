@@ -28,7 +28,7 @@ const Hero = () => {
         
 
         
-        <div className='overflow-clip absolute top-0 -z-1 left-0 w-full bg-black h-screen'>
+        <div className='overflow-clip absolute top-0 -z-1 left-0 w-full bg-black h-full'>
             <img src='/images/Hero.jpg' alt="hero-image" className='bg-image' />
             
         </div>

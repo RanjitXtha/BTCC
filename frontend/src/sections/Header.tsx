@@ -35,9 +35,9 @@ const Header = () => {
                                 </div>
                             </span>
             </div>
-            <div className='flex items-center padding-left gap-[3rem]'>
-                <img className='h-[3rem] drop-shadow-sm drop-shadow-black' src="/images/Logo.png" alt="logo" />
-                <div className='bg-blue flex px-[2rem] items-center font-bold text-white justify-between w-full h-[4rem]'>
+            <div className='flex items-center gap-2 md:gap-4 lg:gap-10 padding-left justify-between'>
+                <img className='h-[3rem] hidden md:block drop-shadow-sm drop-shadow-black' src="/images/Logo.png" alt="logo" />
+                <div className='bg-blue flex items-center gap-2 font-bold text-white justify-evenly w-full h-[4rem]'>
                     <Link to="/">HOME</Link>
                     <Link to="/about">ABOUT</Link>
                     <Link to="/courses">COURSES</Link>

@@ -4,11 +4,12 @@
   --color-dark-brown: #312F2F;
   --color-blue: #124f83;
   --color-orange:#f37621;
+  --breakpoint-mid:900px;
 }
 
 @layer components{
   .padding{
-    @apply px-[3rem]
+    @apply px-[1rem] md:px-[2rem] lg:px-[3rem] 
   }
 
   .padding-y{
@@ -16,7 +17,7 @@
   }
 
   .padding-left{
-    @apply pl-[3rem]
+    @apply pl-0 md:pl-[2rem] lg:pl-[3rem] 
   }
 
   .text-large{
@@ -44,3 +45,12 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none; 
 }
+
+
+
+  @media (min-width:1380px){
+    html{
+      font-size: 125%;
+     
+  }
+  }

@@ -11,7 +11,7 @@ import { FiPhone } from "react-icons/fi";
 import { MdOutlineLocationOn } from "react-icons/md";
 const Footer = () => {
   return (
-    <div className='grid grid-cols-[1.5fr_1fr_2fr] w-full padding justify-between gap-10 bg-[#022E55] text-white py-[5rem]'>
+    <div className='grid grid-cols-[1.5fr_1fr_2.5fr] w-full padding justify-between gap-10 bg-[#022E55] text-white py-[5rem]'>
         <div>
             <span className='flex items-center font-bold text-lg gap-4'>
                 <img className='w-24' src="/images/Logo.png" alt="logo" />
@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
 
 
-        <div className='flex flex-col justify-between font-semibold w-full '>
+        <div className='flex flex-col justify-between text-sm font-semibold w-full '>
             <Link to="/">HOME</Link>
             <Link to="/about">ABOUT</Link>
             <Link to="/courses">COURSES</Link>
