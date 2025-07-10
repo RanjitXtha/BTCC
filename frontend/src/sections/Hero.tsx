@@ -12,8 +12,6 @@ const fadeInUp = {
 const Hero = () => {
   return (
     <div className='relative sm:h-screen max-h-[1080px]'>
-      <Header />
-
       <section className='padding py-[8rem] sm:py-0 text-center sm:text-start sm:pt-[5.5rem] text-white h-full sm:w-2/3 w-full flex flex-col items-center sm:items-start gap-10 justify-center'>
         
         <motion.div

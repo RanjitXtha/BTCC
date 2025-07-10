@@ -1,4 +1,5 @@
 import { motion, type Variants } from "framer-motion";
+import OrangeLine from "../components/OrangeLine";
 
 const galleryImages = [
   "/images/whatsapp/img1.jpg",
@@ -27,16 +28,20 @@ const zoomIn:Variants = {
 const Gallery = () => {
   return (
     <section className="padding padding-y bg-white">
-      <div className="flex items-center mb-6">
-        <div className="mr-4 w-10 h-[4px] bg-orange rounded-full"></div>
-        <h2 className="text-3xl font-bold text-blue">Gallery</h2>
+      <div className="flex items-center h-8 mb-6">
+        <OrangeLine />
+        <h2 className="text-4xl font-bold">Gallery</h2>
       </div>
+        <p className="font-semibold mb-10">
+          A glimpse into our training environment, hands-on sessions, and real-world scaffolding projects.
+        </p>
+    
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
         {galleryImages.map((src, index) => (
           <motion.div
             key={index}
-            className="overflow-hidden rounded-xl shadow-md"
+            className="overflow-hidden custom-shadow"
             variants={zoomIn}
             initial="hidden"
             whileInView="visible"
