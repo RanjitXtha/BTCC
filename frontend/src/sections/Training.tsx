@@ -4,6 +4,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
+import {motion, type Variants} from 'framer-motion';
 
 const responsive = {
 
@@ -104,22 +105,34 @@ const ButtonGroup = ({ next, previous, goToSlide, ...rest }:any) => {
   );
 };
 
+const fadeInUp:Variants = {
+  hidden: { opacity: 0, x: -20 },
+  visible: (i = 1) => ({
+    opacity: 1,
+    x: 0,
+    transition: { delay: i * 0.2, duration: 0.6, ease: "easeOut" }
+  }),
+};
+
 const Training = () => {
   return (
     <div className="relative grid lg:grid-cols-[1fr_1.5fr] xl:grid-cols-[1fr_1fr] gap-6 items-center justify-center text-white py-[7rem] h-full padding pr-0">
 
       <div className="flex">
-        <span>
+        <motion.span custom={0} variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{once:true,amount:0.3}}>
           <OrangeLine />
-        </span>
+        </motion.span>
 
         <div className="flex flex-col gap-10 items-start justify-center">
-          <p className="text-large">Our Professional Training Programs</p>
-          <p>
+          <motion.p custom={1} variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{once:true,amount:0.3}} className="text-large">Our Professional Training Programs</motion.p>
+          <motion.p custom={2} variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{once:true,amount:0.3}} >
             At BTCC International Scaffolding & Safety Training Center Itahari, we offer globally certified training programs designed to prepare individuals for real-world scaffolding and construction safety roles.
-          </p>
+          </motion.p>
 
-          <Button content={'Explore'} />
+        <motion.div custom={3} variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{once:true,amount:0.3}} >
+        <Button content={'Explore'} />
+        </motion.div>
+         
         </div>
       </div>
 
