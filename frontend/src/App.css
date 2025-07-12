@@ -9,7 +9,7 @@
 
 @layer components{
   .padding{
-    @apply px-[1rem] md:px-[2rem] lg:px-[3rem] 
+    @apply px-[1rem] md:px-[2rem] lg:px-[3rem] xl:px-[4rem] 2xl:px-[5rem]
   }
 
   .padding-y{
@@ -17,7 +17,7 @@
   }
 
   .padding-left{
-    @apply pl-0 md:pl-[2rem] lg:pl-[3rem] 
+    @apply pl-0 md:pl-[2rem] lg:pl-[3rem] xl:pl-[4rem] 2xl:pl-[5rem]
   }
 
   .text-large{

@@ -169,7 +169,7 @@ customButtonGroup={<ButtonGroup />}
 
 
       <div className='overflow-clip absolute top-0 -z-1 left-0 w-full bg-black h-full'>
-        <img className="absolute bg-image " src="/images/whatsapp/img1.jpg" alt="background-image" />
+        <img className="absolute bg-image " src="/images/Home/img1.jpg" alt="background-image" />
       </div>
 
 

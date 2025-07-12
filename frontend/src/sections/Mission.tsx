@@ -48,13 +48,13 @@ const Mission = () => {
 
         <div className='flex items-center text-blue font-semibold'>
           <OrangeLine />
-          <p className='mr-6 max-w-[17rem] text-blue text-lg font-bold'>OUR VISION</p>
+          <p className='text-nowrap mr-6 max-w-[17rem] text-blue text-lg font-bold'>OUR VISION</p>
           <p>To be a leading scaffolding services provider recognized for our integrity, safety practices, and global partnerships.</p>
         </div>
 
         <div className='flex items-center text-blue font-semibold'>
           <OrangeLine />
-          <p className='mr-6 max-w-[17rem] text-blue text-lg font-bold'>OUR MISSION</p>
+          <p className='text-nowrap mr-6 max-w-[17rem] text-blue text-lg font-bold'>OUR MISSION</p>
           <p>To be a leading scaffolding services provider recognized for our integrity, safety practices, and global partnerships.</p>
         </div>
       </motion.div>
@@ -76,7 +76,7 @@ const Mission = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
               className='object-cover w-full h-full'
-              src={`/images/whatsapp/${img}.jpg`}
+              src={`/images/Home/${img}.jpg`}
               alt={img}
             />
           </motion.div>

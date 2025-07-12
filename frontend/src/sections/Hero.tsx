@@ -54,7 +54,7 @@ const Hero = () => {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
-        <img src='/images/whatsapp/img5.jpg' alt="hero-image" className='bg-image' />
+        <img src='/images/Hero.jpg' alt="hero-image" className='bg-image' />
       </motion.div>
 
       <motion.div
@@ -62,13 +62,13 @@ const Hero = () => {
         left-1/2 -translate-x-1/2 
         sm:left-auto
         sm:-translate-x-0
-        sm:right-0 -bottom-[5rem] sm:-bottom-[3rem] mr-[3rem]'
+        sm:right-0 -bottom-[2rem] sm:-bottom-[3rem] mr-[1rem] sm:mr-[2rem] lg:mr-[3rem] xl:mr-[4rem] 2xl:mr-[5rem]'
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
       >
         <p className='font-bold text-5xl'>15+</p>
-        <p className='font-light text-xl mt-4'>Years of Experience</p>
+        <p className='text-nowrap font-light text-xl mt-4'>Years of Experience</p>
       </motion.div>
     </div>
   );

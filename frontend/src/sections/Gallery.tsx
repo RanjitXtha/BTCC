@@ -2,14 +2,14 @@ import { motion, type Variants } from "framer-motion";
 import OrangeLine from "../components/OrangeLine";
 
 const galleryImages = [
-  "/images/whatsapp/img1.jpg",
-  "/images/whatsapp/img2.jpg",
-  "/images/whatsapp/img3.jpg",
-  "/images/whatsapp/img4.jpg",
-  "/images/whatsapp/img5.jpg",
-  "/images/whatsapp/img9.jpg",
-  "/images/whatsapp/img7.jpg",
-  "/images/whatsapp/img8.jpg",
+  "/images/Home/img1.jpg",
+  "/images/Home/img2.jpg",
+  "/images/Home/img3.jpg",
+  "/images/Home/img4.jpg",
+  "/images/Home/img5.jpg",
+  "/images/Home/img9.jpg",
+  "/images/Home/img7.jpg",
+  "/images/Home/img8.jpg",
 ];
 
 const zoomIn:Variants = {

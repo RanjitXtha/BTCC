@@ -30,7 +30,7 @@ const Header = () => {
     return (
         <motion.header
           initial={{ y: 0 }}
-  animate={{ y: showHeader ? 0 : -115 }}
+  animate={{ y: showHeader ? 0 : -140 }}
   transition={{
     duration: 0.2,
   }}
